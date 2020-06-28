@@ -10,32 +10,27 @@ const AdminDashBoard = () => {
 
   const adminLeftSide = () => {
     return (
-      <div className="card">
+      <div className="card ">
         <h4 className="card-header bg-dark text-white">Admin Navigation</h4>
-        <ul className="list-group">
-          <li className="list-group-item">
+        <ul className="list-group bg-dark">
+          <li className="list-group-item bg-dark">
             <Link to="/admin/create/category" className="nav-link text-success">
               Create Category
             </Link>
           </li>
-          <li className="list-group-item">
+          <li className="list-group-item bg-dark">
             <Link to="/admin/categories" className="nav-link text-success">
               Manage Categories
             </Link>
           </li>
-          <li className="list-group-item">
+          <li className="list-group-item bg-dark">
             <Link to="/admin/create/product" className="nav-link text-success">
               Create Product
             </Link>
           </li>
-          <li className="list-group-item">
+          <li className="list-group-item bg-dark">
             <Link to="/admin/products" className="nav-link text-success">
               Manage Products
-            </Link>
-          </li>
-          <li className="list-group-item">
-            <Link to="/admin/orders" className="nav-link text-success">
-              Manage Orders
             </Link>
           </li>
         </ul>
@@ -45,18 +40,18 @@ const AdminDashBoard = () => {
 
   const adminRightSide = () => {
     return (
-      <div className="card mb-4">
-        <h4 className="card-header">User Information</h4>
-        <ul className="list-group">
-          <li className="list-group-item">
+      <div className="card mb-4 text-center bg-dark m-4">
+        <h4 className="card-header text-white bg-dark">User Information</h4>
+        <ul className="list-group text-white">
+          <li className="list-group-item bg-dark">
             <span className="badge badge-success mr-2">Name:</span>
             {name}
           </li>
-          <li className="list-group-item">
+          <li className="list-group-item bg-dark">
             <span className="badge badge-success mr-2">Email:</span>
             {email}
           </li>
-          <li className="list-group-item">
+          <li className="list-group-item bg-dark">
             <span className="badge badge-danger">Admin Area</span>
           </li>
         </ul>
@@ -68,7 +63,7 @@ const AdminDashBoard = () => {
     <Base
       title="Welcome to Admin area"
       description="Manage all of your products here"
-      className="container bg-success p-4"
+      className="container p-4"
     >
       <div className="row">
         <div className="col-3">{adminLeftSide()}</div>

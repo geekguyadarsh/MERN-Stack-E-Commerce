@@ -81,9 +81,9 @@ const Signin = () => {
   const signInForm = () => {
     return (
       <div className="row">
-        <div className="col-md-4 offset-sm-4 text-left">
+        <div className="col-md-4 offset-sm-4 text-left standard-shadow">
           <form>
-            <div className="form-group">
+            <div className="form-group mt-4">
               <label className="text-light">Email</label>
               <input
                 type="text"
@@ -101,7 +101,7 @@ const Signin = () => {
                 className="form-control"
               />
             </div>
-            <button onClick={onSubmit} className="btn btn-primary">
+            <button onClick={onSubmit} className="btn btn-primary mb-4">
               Sign in
             </button>
           </form>

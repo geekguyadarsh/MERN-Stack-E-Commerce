@@ -10,19 +10,25 @@ const Base = ({
   <div>
     <Menu />
     <div className="container-fluid">
-      <div className="jumbotron bg-dark text-white text-center">
+      <div className="bg-dark text-white text-center mt-3">
         <h2 className="display-4">{title}</h2>
         <p className="lead">{description}</p>
       </div>
       <div className={className}>{children}</div>
     </div>
     <footer className="footer bg-dark mt-auto py-3">
-      <div className="container-fluid bg-success text-white text-center py-3">
+      <div className="container-fluid bg-dark text-white text-center py-3 footer-blur">
         <h4>If you have any questions, feel free to reach out!</h4>
-        <button className="btn btn-warning btn-large">Contact Us</button>
+
+        <a
+          className="btn btn-warning btn-large"
+          href="mailto:geekguyadarsh@gmail.com"
+        >
+          Contact Us
+        </a>
       </div>
-      <div className="container">
-        <span className="text-muted">
+      <div className="container mt-2">
+        <span className="text-muted ">
           An amazing <span className="text-white">Merchnedise for Geeks</span>
         </span>
       </div>

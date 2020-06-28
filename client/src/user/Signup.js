@@ -42,9 +42,9 @@ const Signup = () => {
   const signUpForm = () => {
     return (
       <div className="row">
-        <div className="col-md-6 offset-sm-3 text-left">
+        <div className="col-md-6 offset-sm-3 text-left standard-shadow">
           <form>
-            <div className="form-group">
+            <div className="form-group mt-3">
               <label className="text-light">Name</label>
               <input
                 className="form-control"
@@ -69,7 +69,10 @@ const Signup = () => {
                 type="password"
               />
             </div>
-            <button onClick={onSubmit} className="btn btn-success btn-block">
+            <button
+              onClick={onSubmit}
+              className="btn btn-success btn-block mb-4"
+            >
               Submit
             </button>
           </form>

@@ -186,9 +186,8 @@ const AddProduct = () => {
       title="Add a Product here!"
       description="Welcome to product creation section"
     >
-      <div className="container bg-info p-4">
-        7
-        <div className="bg-dark text-white rounded">
+      <div className="container bg-dark p-4">
+        <div className="bg-dark text-white rounded standard-shadow pt-2 pb-2">
           <div className="col-md-8 offset-md-2">
             {successMessage()}
             {redirect()}

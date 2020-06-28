@@ -59,7 +59,7 @@ const AddCategory = () => {
     return (
       <form>
         <div className="form-group">
-          <p className="lead">Enter the category</p>
+          <p className="lead mt-1">Enter the category</p>
           <input
             type="text"
             className="form-control my-3"
@@ -81,10 +81,10 @@ const AddCategory = () => {
     <Base
       title="Create a Category here"
       description="Add a new categroy for your product"
-      className="container bg-info p-4"
+      className="container p-4"
     >
-      <div className="row bg-white rounded">
-        <div className="col-md-8 offset-md-2 bg-white">
+      <div className="row rounded">
+        <div className="col-md-8 offset-md-2 bg-dark standard-shadow text-white">
           {warningMessage()}
           {successMessage()}
           {myCategoryForm()}
