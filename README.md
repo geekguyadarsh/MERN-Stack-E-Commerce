@@ -1,5 +1,7 @@
 # MERN-Stack-E-Commerce
 
+![screencapture-localhost-3000-2020-06-27-19_48_33](https://user-images.githubusercontent.com/64296079/85938306-a4543080-b929-11ea-9370-56a3f82c1eb6.png)
+
 A fully functional e-commerce web app build using MERN-Stack
 
 ## Available Scripts
