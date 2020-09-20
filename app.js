@@ -5,6 +5,7 @@ const app = express();
 var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
 var cors = require("cors");
+const path = require("path");
 
 //My Middlewares
 app.use(bodyParser.json());
@@ -29,7 +30,8 @@ mongoose
   })
   .then(() => {
     console.log("DATABASE CONNECTED");
-  });
+  })
+  .catch((err) => console.log(err));
 
 //My Routes
 app.use("/api", authRoutes);
@@ -41,8 +43,18 @@ app.use("/api", stripeRoutes);
 app.use("/api", paymentRoutes);
 
 //ports
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   console.log(`the app is running at port ${port}`);
 });
+
+// Serve static assets if in production
+if (process.env.NODE_ENV === "production") {
+  // Set static folder
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
